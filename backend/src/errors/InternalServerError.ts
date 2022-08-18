@@ -1,8 +1,8 @@
-import CustomError from "./CustomError";
+import { CustomError } from "./CustomError";
 import { v4 as uuid } from 'uuid';
-import {HttpStatusCode} from "./HttpStatusCode";
+import { HttpStatusCode } from "./HttpStatusCode";
 
-class InternalServerError extends CustomError {
+export class InternalServerError extends CustomError {
     private stacktrace: string;
 
     constructor(stacktrace: string) {
@@ -21,5 +21,3 @@ class InternalServerError extends CustomError {
     }
 
 }
-
-export default InternalServerError;

@@ -1,5 +1,5 @@
 import * as AWS from 'aws-sdk';
-import InternalServerError from "../errors/InternalServerError";
+import { InternalServerError } from "../errors/InternalServerError";
 
 class SecretsManagerUtil {
     

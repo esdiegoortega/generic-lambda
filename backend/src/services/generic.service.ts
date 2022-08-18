@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-class GenericService{
+export class GenericService{
 
     private config = {
         host:<string> '',
@@ -23,5 +23,3 @@ class GenericService{
         return genericService;
       }
 }
-
-export default GenericService;

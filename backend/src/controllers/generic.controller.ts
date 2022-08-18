@@ -1,8 +1,7 @@
-import BaseController from './base.controller';
-import DbService from '../services/db.service';
-import GenericService from '../services/generic.service';
+import { BaseController } from './base.controller';
+import { DbService, GenericService } from '../services';
 
-class GenericController extends BaseController{
+export class GenericController extends BaseController{
   genericService: GenericService;
   db: DbService;
 
@@ -34,5 +33,3 @@ class GenericController extends BaseController{
     return response;    
   }
 }
-
-export default GenericController;

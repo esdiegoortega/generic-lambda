@@ -1,5 +1,5 @@
 
-export default abstract class User {
+export abstract class User {
     customerID: string;
     id: string;
     userName: string;
