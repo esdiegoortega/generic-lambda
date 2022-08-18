@@ -1,7 +1,7 @@
-import CustomError from "./CustomError";
-import {HttpStatusCode} from "./HttpStatusCode";
+import { CustomError } from "./CustomError";
+import { HttpStatusCode } from "./HttpStatusCode";
 
-class UnauthorizedError extends CustomError {
+export class UnauthorizedError extends CustomError {
 
     constructor(message: string) {
         super(message, HttpStatusCode.UNAUTHORIZED);
@@ -11,5 +11,3 @@ class UnauthorizedError extends CustomError {
         return this.getMessage();
     }
 }
-
-export default UnauthorizedError;

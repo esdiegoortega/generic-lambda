@@ -1,7 +1,7 @@
-import CustomError from "./CustomError";
-import {HttpStatusCode} from "./HttpStatusCode";
+import { CustomError } from "./CustomError";
+import { HttpStatusCode } from "./HttpStatusCode";
 
-class BadRequestError extends CustomError {
+export class BadRequestError extends CustomError {
 
     constructor(message: string) {
         super(message, HttpStatusCode.BAD_REQUEST);
@@ -11,5 +11,3 @@ class BadRequestError extends CustomError {
         return this.getMessage();
     }
 }
-
-export default BadRequestError;

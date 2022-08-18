@@ -1,7 +1,6 @@
 import { Handler } from 'aws-lambda';
-import GenericController from './controllers/generic.controller';
-import CustomError from '../src/errors/CustomError';
-import BadRequestError from '../src/errors/BadRequestError';
+import { GenericController } from './controllers';
+import { CustomError, BadRequestError } from './errors';
 
 export const genericFunction: Handler = async (event:any) => {
     try{
@@ -21,4 +20,4 @@ export const genericFunction: Handler = async (event:any) => {
                         };
         return response;
     }  
-}
+  }

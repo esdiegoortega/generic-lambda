@@ -1,9 +1,8 @@
 import * as AWS from 'aws-sdk';
 import { Agent as httpsAgent } from 'https';
-import InternalServerError from '../errors/InternalServerError';
-import User from '../model/user';
-
-class DbService {
+import { InternalServerError } from '../errors';
+import { User } from '../model';
+export class DbService {
   
   private docClient: AWS.DynamoDB.DocumentClient; 
 
@@ -106,5 +105,3 @@ class DbService {
       });
     }
 }
-
-export default DbService;

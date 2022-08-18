@@ -1,4 +1,4 @@
-abstract class CustomError extends Error {
+export abstract class CustomError extends Error {
     errorCode:Number;
 
     constructor(message: string, errorCode: Number) {
@@ -16,5 +16,3 @@ abstract class CustomError extends Error {
 
     abstract getLogError():string;
 }
-
-export default CustomError;

@@ -1,13 +1,11 @@
 import { isEmpty } from 'class-validator';
 import jwt from 'jsonwebtoken';
 import { JwksClient, SigningKey } from 'jwks-rsa';
-import CustomError from '../errors/CustomError';
-import InternalServerError from '../errors/InternalServerError';
-import UnauthorizedError from '../errors/BadRequestError';
-import BaseController from './base.controller';
+import { CustomError, InternalServerError, UnauthorizedError } from '../errors';
+import { BaseController } from './base.controller';
 import  SecretsManagerUtil from '../utils/SecretsManagerUtil';
 
-class AuthorizerController extends BaseController{
+export class AuthorizerController extends BaseController{
 
   constructor() {
     super();
@@ -118,5 +116,3 @@ class AuthorizerController extends BaseController{
   } 
 
 }
-
-export default AuthorizerController;

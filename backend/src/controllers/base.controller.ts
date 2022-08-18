@@ -1,5 +1,5 @@
 
-export default abstract class BaseController {
+export abstract class BaseController {
   protected response (code:number, bodyResp:string) {
     const response = {
       statusCode: code,

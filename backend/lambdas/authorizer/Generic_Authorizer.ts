@@ -1,7 +1,6 @@
 import { Handler, Context, Callback } from 'aws-lambda';
-import AuthorizerController from '../../src/controllers/authorizer.controller';
-import CustomError from '../../src/errors/CustomError';
-import BadRequestError from '../../src/errors/BadRequestError';
+import { AuthorizerController } from '../../src/controllers';
+import { CustomError, BadRequestError } from '../../src/errors';
 
 export const GenericAuthorizer: Handler = async (event, context:Context ,callback:Callback ) => {
 
