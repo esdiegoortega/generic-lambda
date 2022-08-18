@@ -14,7 +14,7 @@ Generic-Lambda was built using:
 
 1. Clone the project using `git clone git@github.com:esdiegoortega/generic-lambda.git`
 2. Enter to the folder: `cd generic-lambda`
-3. git pull, git checkout develop, git branch 
+3. git pull, git checkout develop, git branch -b feat/new-branch 
 4. Install the dependencies: `yarn install` o `npm install`
 
 
